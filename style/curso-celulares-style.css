@@ -308,6 +308,10 @@ main{
     width: 600px;
     margin-top: 2rem;
 }
+.profesor-curso img{
+    width: 200px;
+    height: 200px;
+}
 
 .oferta-gratis{
     margin: 3rem 25rem 3rem 25rem;
