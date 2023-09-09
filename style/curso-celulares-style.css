@@ -1,0 +1,2247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Josefin+Sans&family=Oswald&display=swap');
+
+/* font-family: 'Anton', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Oswald', sans-serif; 
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Crimson Text', serif;
+*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Estilo para el botón titilante */
+.blink {
+    animation: blink-animation 0.9s steps(10, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+header{
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+}
+header h1{
+    margin-top: 2rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+    color: white;
+}
+header h2{
+    background-color: rgb(64, 95, 64);
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    margin-bottom: 2rem;
+}
+header button{
+    padding: 5px 25px 1px 25px;
+    background-color: rgb(54, 54, 54);
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    border-color: rgb(255, 0, 0);
+    font-size: 25px;
+    border-radius: 10px;
+}
+header button:hover{
+    background-color: red;
+    color: black;
+    border-color: white;
+}
+header button a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+header button a:hover{
+    color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.acceso-info h3{ 
+    color: rgb(14, 165, 0);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    margin-bottom: -3rem;
+}
+.acceso-info h2{ 
+    color: rgb(65, 65, 65);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 150px;
+    margin-bottom: -2rem;
+}
+.acceso-info h5{ 
+    color: rgb(65, 65, 65);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    background-color: rgb(255, 208, 0);
+    margin-bottom: 3rem;
+}
+.comentarios-img{ 
+    margin-bottom: 3rem;
+}
+.reparaciones-img{
+    margin-bottom: 3rem;
+}
+
+.comienzo-clases{
+    padding: 3rem 0rem 3rem 0rem;
+    background-color: rgb(65, 65, 65);
+    font-family: 'Bebas Neue', sans-serif;
+}
+.comienzo-clases h2{
+    color:  rgb(255, 208, 0);
+    font-size: 100px;
+}
+.comienzo-clases h5{
+    color: white;
+    margin-top: -2rem;
+    font-size: 35px;
+}
+
+.info-cursada{
+    background-color: rgb(70, 70, 70);
+    border-radius: 15px;
+    margin: 1rem 20rem 1rem 20rem;
+    text-align: left;
+}
+.info-cursada h3{
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+    font-size: 50px;
+}
+.info-cursada-text{
+    margin: 1rem 10rem 1rem 10rem;
+    color: white;
+    font-size: 18px;
+}
+
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+.oferta-curso{
+    margin: 0rem 25rem 0rem 25rem;
+    border-style: dashed;
+    border-color: rgb(16, 202, 16);
+    border-radius: 1rem;
+}
+.oferta-curso h2{   
+    color: red;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    margin-bottom: -3rem;
+}
+.timer {
+    background-color: red;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 1rem 0rem 1rem;
+    border-radius: 1rem;
+}
+.timer h4{
+    padding-top: 1rem;
+    font-size: 30px;
+}
+.oferta-precios h1{
+    font-size: 80px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.oferta-precios h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    margin-top: -1rem;
+    background-color: gray;
+    color: rgb(0, 255, 0);
+    text-shadow: 2px 2px 1px black;
+}
+.oferta-precios p{
+    font-weight: 600;
+}
+
+.boton-compra{
+    display: flex;
+    flex-direction: column;
+}
+.boton-compra button{
+    background-color: rgb(0, 189, 0);
+    margin: 0px 100px 0px 100px;
+    border-radius: 2rem;
+}
+.boton-compra a{
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 120px;
+    text-shadow: 2px 2px 1px black;
+}
+.boton-compra p{
+    margin-top: -3rem;
+}
+.boton-compra img{
+    max-width: 350px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 23rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-style: solid;
+    border-color: rgb(97, 97, 97);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgb(150, 150, 150);
+}
+
+.profesor-curso{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+.profesor-curso h3{
+    margin-top: 4rem;
+    width: 300px;
+}
+.profesor-curso p{
+    width: 600px;
+    margin-top: 2rem;
+}
+
+.oferta-gratis{
+    margin: 3rem 25rem 3rem 25rem;
+    border-radius: 1rem;
+    border-style: dashed;
+    border-color: rgb(255, 0, 0);
+    font-family: 'Bebas Neue', sans-serif;
+}
+.oferta-gratis h1{
+    color: red;
+    padding: 2rem;
+    font-size: 100px;
+    background-color: rgb(255, 208, 0);
+}
+.oferta-gratis h2{
+    background-color: rgb(255, 208, 0);
+    margin-top: -2rem;
+    font-size: 35px;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+}
+.oferta-gratis h5{
+    background-color: rgb(255, 208, 0);
+    font-size: 70px;
+    color: rgb(0, 102, 255);
+    margin-top: -3rem;
+    text-shadow: 1px 2px 1px black;
+}
+.oferta-gratis img{
+    width: 800px;
+}
+.oferta-gratis button{
+    text-decoration: none;
+    background-color: rgb(6, 216, 6);
+    margin: 3rem 20rem 3rem 20rem;
+    color: white;
+    padding: 2rem 1rem 2rem 1rem;
+    font-size: 80px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+.oferta-gratis button a{
+    text-decoration: none;
+    color: white;
+}
+
+.oferta-curso2{
+    margin: 3rem 25rem 3rem 25rem;
+    border-style: dashed;
+    border-color: rgb(16, 202, 16);
+    border-radius: 1rem;
+}
+.oferta-curso2 h2{   
+    color: red;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    margin-bottom: -3rem;
+}
+
+/* PREGUNTAS */
+
+.seccion-preguntas{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.seccion-preguntas h4{
+    font-size: 45px;
+    margin-top: 2rem;
+    color: red;
+}
+.seccion-preguntas h5{
+    font-size: 30px;
+}
+
+.accordion {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    text-align: left;
+    border: 1px solid #ddd;
+    margin: 15px 0;
+    background-color: #ffffff;
+}
+
+.accordion-header {
+    background-color: #e6e6e6;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin: 0rem 30rem 0rem 30rem;
+    border-style: solid;
+    border-color: rgb(105, 105, 105);
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    margin: 0rem 32rem 0rem 32rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------RESPONSIVE-------------------------- */
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1366px){
+    .info-cursada{
+        background-color: rgb(70, 70, 70);
+        border-radius: 15px;
+        margin: 1rem 10rem 1rem 10rem;
+        text-align: left;
+    }
+    .info-cursada-text{
+        margin: 1rem 4rem 1rem 4rem;
+        color: white;
+        font-size: 15px;
+    }
+    .oferta-curso{
+        margin: 0rem 8rem 0rem 8rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .timer {
+        background-color: red;
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin: 50px 4rem 0rem 4rem;
+        border-radius: 1rem;
+    }
+    .boton-compra button{
+        background-color: rgb(0, 189, 0);
+        margin: 0px 350px 0px 350px;
+        border-radius: 2rem;
+    }
+    .boton-compra a{
+        font-family: 'Bebas Neue', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 50px;
+        text-shadow: 2px 2px 1px black;
+    }
+    .boton-compra p{
+        margin-top: -1rem;
+    }
+    .boton-compra img{
+        max-width: 500px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-style: solid;
+        border-color: rgb(97, 97, 97);
+        border-radius: 1rem;
+        box-shadow: 2px 2px 5px rgb(150, 150, 150);
+    }
+    .boton-compra img{
+        margin: 2rem 0rem 2rem 23.6rem;
+        max-width: 350px;
+    }
+    .profesor-curso{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        margin-top: 1em;
+        margin-bottom: 1rem;
+        gap: 3rem;
+    }
+    .profesor-curso h3{
+        margin-top: 1rem;
+        width: 300px;
+    }
+    .profesor-curso p{
+        width: 500px;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+    }
+    .profesor-curso img{
+        width: 200px;
+        height: 200px;
+        margin-top: 1rem;
+    }
+    .oferta-gratis{
+        margin: 1rem 8rem 1rem 8rem;
+        border-radius: 1rem;
+        border-style: dashed;
+        border-color: rgb(255, 0, 0);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .oferta-gratis h1{
+        color: red;
+        padding: 2rem;
+        font-size: 50px;
+        background-color: rgb(255, 208, 0);
+    }
+    .oferta-gratis h2{
+        background-color: rgb(255, 208, 0);
+        margin-top: -2rem;
+        font-size: 35px;
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }
+    .oferta-gratis h5{
+        background-color: rgb(255, 208, 0);
+        font-size: 40px;
+        color: rgb(0, 102, 255);
+        margin-top: -3rem;
+        text-shadow: 1px 2px 1px black;
+    }
+    .oferta-gratis button{
+        text-decoration: none;
+        background-color: rgb(6, 216, 6);
+        margin: 1rem 0rem 1rem 0rem;
+        color: white;
+        padding: 2rem 3rem 2rem 3rem;
+        font-size: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px gray;
+    }
+    .oferta-gratis button a{
+        text-decoration: none;
+        color: white;
+    }
+    .oferta-curso2{
+        margin: 1rem 0rem 3rem 0rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .oferta-curso2 img{
+        width: 300px;
+    }
+    .oferta-curso2 h2{   
+        color: red;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 60px;
+        margin-bottom: -3rem;
+    }
+    /* PREGUNTAS */
+    .seccion-preguntas{
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .seccion-preguntas h4{
+        font-size: 45px;
+        margin-top: 2rem;
+        color: red;
+    }
+    .seccion-preguntas h5{
+        font-size: 30px;
+    }
+    .accordion {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .accordion-item {
+        text-align: left;
+        border: 1px solid #ddd;
+        margin: 10px 0;
+        background-color: #ffffff;
+    }
+    .accordion-header {
+        background-color: #e6e6e6;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 1rem;
+        margin: 0rem 10rem 0rem 10rem;
+        border-style: solid;
+        border-color: rgb(105, 105, 105);
+    }
+    .accordion-content {
+        display: none;
+        padding: 10px;
+        margin: 0rem 10rem 0rem 10rem;
+    }
+    .oferta-curso2{
+        margin: 3rem 10rem 3rem 10rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .oferta-curso2 h2{   
+        color: red;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 100px;
+        margin-bottom: -3rem;
+    }
+    .oferta-curso2 img{
+        width: 600px;
+    }
+
+}
+@media(max-width: 768px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    header{
+        text-align: center;
+        background-color: rgb(54, 54, 54);
+    }
+    header h1{
+        margin-top: 0rem;
+        font-family: 'Anton', sans-serif;
+        font-size: 100px;
+        color: white;
+    }
+    header h2{
+        background-color: rgb(64, 95, 64);
+        color: black;
+        font-family: 'Anton', sans-serif;
+        font-size: 60px;
+        margin-bottom: 1rem;
+    }
+    header button{
+        padding: 5px 15px 5px 15px;
+        margin: 3px 0px 3px 0px;
+        background-color: rgb(54, 54, 54);
+        font-family: 'Bebas Neue', sans-serif;
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        border-color: rgb(255, 0, 0);
+        font-size: 20px;
+        border-radius: 10px;
+        margin-right: 2rem;
+    }
+    header button:hover{
+        background-color: red;
+        color: black;
+        border-color: white;
+    }
+    header button a{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+    }
+    header button a:hover{
+        color: black;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .acceso-info h3{ 
+        color: rgb(14, 165, 0);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 80px;
+        margin-bottom: -1rem;
+    }
+    .acceso-info h2{ 
+        color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 100px;
+        margin-bottom: -1rem;
+    }
+    .acceso-info h5{ 
+        color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 30px;
+        background-color: rgb(255, 208, 0);
+        margin-bottom: 1rem;
+    }
+    .comentarios-img{ 
+        margin-bottom: 1rem;
+    }
+    .reparaciones-img{
+        margin-bottom: 1rem;
+    }
+    
+    .comienzo-clases{
+        padding: 1rem 0rem 1rem 0rem;
+        background-color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .comienzo-clases h2{
+        color:  rgb(255, 208, 0);
+        font-size: 70px;
+    }
+    .comienzo-clases h5{
+        color: white;
+        margin-top: -1rem;
+        font-size: 35px;
+    }
+    
+    .info-cursada{
+        background-color: rgb(70, 70, 70);
+        border-radius: 15px;
+        margin: 1rem 0rem 1rem 0rem;
+        text-align: left;
+    }
+    .info-cursada h3{
+        font-family: 'Bebas Neue', sans-serif;
+        text-align: center;
+        margin-top: 1rem;
+        color: white;
+        font-size: 50px;
+    }
+    .info-cursada-text{
+        margin: 1rem 4rem 1rem 4rem;
+        color: white;
+        font-size: 15px;
+    }
+    
+    .oferta-curso{
+        margin: 0rem 0rem 0rem 0rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .oferta-curso h2{   
+        color: red;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 80px;
+        margin-bottom: -3rem; 
+    }
+    .timer {
+        background-color: red;
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin: 50px 1rem 0rem 1rem;
+        border-radius: 1rem;
+    }
+    .timer h4{
+        padding-top: 1rem;
+        font-size: 30px;
+    }
+    .oferta-precios h1{
+        font-size: 80px;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .oferta-precios h3{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 60px;
+        margin-top: -1rem;
+        background-color: gray;
+        color: rgb(0, 255, 0);
+        text-shadow: 2px 2px 1px black;
+    }
+    .oferta-precios p{
+        font-weight: 600;
+    }
+    
+    .boton-compra{
+        display: flex;
+        flex-direction: column;
+    }
+    .boton-compra button{
+        background-color: rgb(0, 189, 0);
+        margin: 0px 50px 0px 50px;
+        border-radius: 2rem;
+    }
+    .boton-compra a{
+        font-family: 'Bebas Neue', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 50px;
+        text-shadow: 2px 2px 1px black;
+    }
+    .boton-compra p{
+        margin-top: -1rem;
+    }
+    .boton-compra img{
+        max-width: 500px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-style: solid;
+        border-color: rgb(97, 97, 97);
+        border-radius: 1rem;
+        box-shadow: 2px 2px 5px rgb(150, 150, 150);
+    }
+    .boton-compra img{
+        margin: 2rem 0rem 2rem 13rem;
+        max-width: 350px;
+    }
+
+    .profesor-curso{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        margin-top: 1em;
+        margin-bottom: 1rem;
+        gap: 3rem;
+    }
+    .profesor-curso h3{
+        margin-top: 1rem;
+        width: 300px;
+    }
+    .profesor-curso p{
+        width: 300px;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+    }
+    .profesor-curso img{
+        width: 200px;
+        height: 200px;
+        margin-top: 4rem;
+    }
+    
+    .oferta-gratis{
+        margin: 1rem 0rem 1rem 0rem;
+        border-radius: 1rem;
+        border-style: dashed;
+        border-color: rgb(255, 0, 0);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .oferta-gratis h1{
+        color: red;
+        padding: 2rem;
+        font-size: 50px;
+        background-color: rgb(255, 208, 0);
+    }
+    .oferta-gratis h2{
+        background-color: rgb(255, 208, 0);
+        margin-top: -2rem;
+        font-size: 35px;
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }
+    .oferta-gratis h5{
+        background-color: rgb(255, 208, 0);
+        font-size: 40px;
+        color: rgb(0, 102, 255);
+        margin-top: -3rem;
+        text-shadow: 1px 2px 1px black;
+    }
+    .oferta-gratis img{
+    }
+    .oferta-gratis button{
+        text-decoration: none;
+        background-color: rgb(6, 216, 6);
+        margin: 1rem 0rem 1rem 0rem;
+        color: white;
+        padding: 2rem 3rem 2rem 3rem;
+        font-size: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px gray;
+    }
+    .oferta-gratis button a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .oferta-curso2{
+        margin: 1rem 0rem 3rem 0rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .oferta-curso2 img{
+        width: 300px;
+    }
+    .oferta-curso2 h2{   
+        color: red;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 60px;
+        margin-bottom: -3rem;
+    }
+
+    
+    /* PREGUNTAS */
+    
+    .seccion-preguntas{
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    
+    .seccion-preguntas h4{
+        font-size: 45px;
+        margin-top: 2rem;
+        color: red;
+    }
+    .seccion-preguntas h5{
+        font-size: 30px;
+    }
+    
+    .accordion {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .accordion-item {
+        text-align: left;
+        border: 1px solid #ddd;
+        margin: 10px 0;
+        background-color: #ffffff;
+    }
+    
+    .accordion-header {
+        background-color: #e6e6e6;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 1rem;
+        margin: 0rem 1rem 0rem 1rem;
+        border-style: solid;
+        border-color: rgb(105, 105, 105);
+    }
+    
+    .accordion-content {
+        display: none;
+        padding: 10px;
+        margin: 0rem 1rem 0rem 1rem;
+    }
+}
+@media(max-width: 414px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    header{
+        text-align: center;
+        background-color: rgb(54, 54, 54);
+    }
+    header h1{
+        margin-top: 0rem;
+        font-family: 'Anton', sans-serif;
+        font-size: 100px;
+        color: white;
+    }
+    header h2{
+        background-color: rgb(64, 95, 64);
+        color: black;
+        font-family: 'Anton', sans-serif;
+        font-size: 60px;
+        margin-bottom: 1rem;
+    }
+    header button{
+        padding: 5px 15px 5px 15px;
+        margin: 3px 0px 3px 0px;
+        background-color: rgb(54, 54, 54);
+        font-family: 'Bebas Neue', sans-serif;
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        border-color: rgb(255, 0, 0);
+        font-size: 20px;
+        border-radius: 10px;
+        margin-right: 2rem;
+    }
+    header button:hover{
+        background-color: red;
+        color: black;
+        border-color: white;
+    }
+    header button a{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+    }
+    header button a:hover{
+        color: black;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .acceso-info h3{ 
+        color: rgb(14, 165, 0);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 80px;
+        margin-bottom: -1rem;
+    }
+    .acceso-info h2{ 
+        color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 100px;
+        margin-bottom: -1rem;
+    }
+    .acceso-info h5{ 
+        color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 30px;
+        background-color: rgb(255, 208, 0);
+        margin-bottom: 1rem;
+    }
+    .comentarios-img{ 
+        margin-bottom: 1rem;
+    }
+    .reparaciones-img{
+        margin-bottom: 1rem;
+    }
+    
+    .comienzo-clases{
+        padding: 1rem 0rem 1rem 0rem;
+        background-color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .comienzo-clases h2{
+        color:  rgb(255, 208, 0);
+        font-size: 70px;
+    }
+    .comienzo-clases h5{
+        color: white;
+        margin-top: -1rem;
+        font-size: 35px;
+    }
+    
+    .info-cursada{
+        background-color: rgb(70, 70, 70);
+        border-radius: 15px;
+        margin: 1rem 0rem 1rem 0rem;
+        text-align: left;
+    }
+    .info-cursada h3{
+        font-family: 'Bebas Neue', sans-serif;
+        text-align: center;
+        margin-top: 1rem;
+        color: white;
+        font-size: 50px;
+    }
+    .info-cursada-text{
+        margin: 1rem 2rem 1rem 2rem;
+        color: white;
+        font-size: 15px;
+    }
+    .oferta-curso{
+        margin: 0rem 0rem 0rem 0rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .oferta-curso h2{   
+        color: red;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 80px;
+        margin-bottom: -3rem;
+    }
+    .timer {
+        background-color: red;
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin: 50px 1rem 0rem 1rem;
+        border-radius: 1rem;
+    }
+    .timer h4{
+        padding-top: 1rem;
+        font-size: 30px;
+    }
+    .oferta-precios h1{
+        font-size: 80px;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .oferta-precios h3{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 60px;
+        margin-top: -1rem;
+        background-color: gray;
+        color: rgb(0, 255, 0);
+        text-shadow: 2px 2px 1px black;
+    }
+    .oferta-precios p{
+        font-weight: 600;
+    }
+    
+    .boton-compra{
+        display: flex;
+        flex-direction: column;
+    }
+    .boton-compra button{
+        background-color: rgb(0, 189, 0);
+        margin: 0px 0px 0px 0px;
+        border-radius: 2rem;
+    }
+    .boton-compra a{
+        font-family: 'Bebas Neue', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 50px;
+        text-shadow: 2px 2px 1px black;
+    }
+    .boton-compra p{
+        margin-top: -1rem;
+    }
+    .boton-compra img{
+        max-width: 500px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-style: solid;
+        border-color: rgb(97, 97, 97);
+        border-radius: 1rem;
+        box-shadow: 2px 2px 5px rgb(150, 150, 150);
+    }
+    .profesor-curso{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+    }
+    .profesor-curso p{
+        width: 300px;
+        margin-top: -2rem;
+        margin-left: 4rem;
+    }
+    .profesor-curso img{
+        margin-left: 6.5rem;
+    }
+    
+    .oferta-gratis{
+        margin: 1rem 0rem 1rem 0rem;
+        border-radius: 1rem;
+        border-style: dashed;
+        border-color: rgb(255, 0, 0);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .oferta-gratis h1{
+        color: red;
+        padding: 2rem;
+        font-size: 50px;
+        background-color: rgb(255, 208, 0);
+    }
+    .oferta-gratis h2{
+        background-color: rgb(255, 208, 0);
+        margin-top: -2rem;
+        font-size: 35px;
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }
+    .oferta-gratis h5{
+        background-color: rgb(255, 208, 0);
+        font-size: 40px;
+        color: rgb(0, 102, 255);
+        margin-top: -3rem;
+        text-shadow: 1px 2px 1px black;
+    }
+    .oferta-gratis img{
+    }
+    .oferta-gratis button{
+        text-decoration: none;
+        background-color: rgb(6, 216, 6);
+        margin: 1rem 0rem 1rem 0rem;
+        color: white;
+        padding: 2rem 3rem 2rem 3rem;
+        font-size: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px gray;
+    }
+    .oferta-gratis button a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .oferta-curso2{
+        margin: 1rem 0rem 3rem 0rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .oferta-curso2 img{
+        width: 300px;
+    }
+    .oferta-curso2 h2{   
+        color: red;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 60px;
+        margin-bottom: -3rem;
+    }
+
+    
+    /* PREGUNTAS */
+    
+    .seccion-preguntas{
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    ñ
+    .seccion-preguntas h4{
+        font-size: 45px;
+        margin-top: 2rem;
+        color: red;
+    }
+    .seccion-preguntas h5{
+        font-size: 30px;
+    }
+    
+    .accordion {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .accordion-item {
+        text-align: left;
+        border: 1px solid #ddd;
+        margin: 10px 0;
+        background-color: #ffffff;
+    }
+    
+    .accordion-header {
+        background-color: #e6e6e6;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 1rem;
+        margin: 0rem 1rem 0rem 1rem;
+        border-style: solid;
+        border-color: rgb(105, 105, 105);
+    }
+    
+    .accordion-content {
+        display: none;
+        padding: 10px;
+        margin: 0rem 1rem 0rem 1rem;
+    }
+}
+@media(max-width: 390px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    header{
+        text-align: center;
+        background-color: rgb(54, 54, 54);
+    }
+    header h1{
+        margin-top: 0rem;
+        font-family: 'Anton', sans-serif;
+        font-size: 100px;
+        color: white;
+    }
+    header h2{
+        background-color: rgb(64, 95, 64);
+        color: black;
+        font-family: 'Anton', sans-serif;
+        font-size: 60px;
+        margin-bottom: 1rem;
+    }
+    header button{
+        padding: 5px 15px 5px 15px;
+        margin: 3px 0px 3px 0px;
+        background-color: rgb(54, 54, 54);
+        font-family: 'Bebas Neue', sans-serif;
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        border-color: rgb(255, 0, 0);
+        font-size: 20px;
+        border-radius: 10px;
+        margin-right: 2rem;
+    }
+    header button:hover{
+        background-color: red;
+        color: black;
+        border-color: white;
+    }
+    header button a{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+    }
+    header button a:hover{
+        color: black;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .acceso-info h3{ 
+        color: rgb(14, 165, 0);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 80px;
+        margin-bottom: -1rem;
+    }
+    .acceso-info h2{ 
+        color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 100px;
+        margin-bottom: -1rem;
+    }
+    .acceso-info h5{ 
+        color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 30px;
+        background-color: rgb(255, 208, 0);
+        margin-bottom: 1rem;
+    }
+    .comentarios-img{ 
+        margin-bottom: 1rem;
+    }
+    .reparaciones-img{
+        margin-bottom: 1rem;
+    }
+    
+    .comienzo-clases{
+        padding: 1rem 0rem 1rem 0rem;
+        background-color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .comienzo-clases h2{
+        color:  rgb(255, 208, 0);
+        font-size: 70px;
+    }
+    .comienzo-clases h5{
+        color: white;
+        margin-top: -1rem;
+        font-size: 35px;
+    }
+    
+    .info-cursada{
+        background-color: rgb(70, 70, 70);
+        border-radius: 15px;
+        margin: 1rem 0rem 1rem 0rem;
+        text-align: left;
+    }
+    .info-cursada h3{
+        font-family: 'Bebas Neue', sans-serif;
+        text-align: center;
+        margin-top: 1rem;
+        color: white;
+        font-size: 50px;
+    }
+    .info-cursada-text{
+        margin: 1rem 0rem 1rem 0rem;
+        color: white;
+        font-size: 15px;
+    }
+    
+    .heartbeat {
+        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+                animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+    @-webkit-keyframes heartbeat {
+        from {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: center center;
+                  transform-origin: center center;
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+        10% {
+          -webkit-transform: scale(0.91);
+                  transform: scale(0.91);
+          -webkit-animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        17% {
+          -webkit-transform: scale(0.98);
+                  transform: scale(0.98);
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+        33% {
+          -webkit-transform: scale(0.87);
+                  transform: scale(0.87);
+          -webkit-animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        45% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+      }
+      @keyframes heartbeat {
+        from {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: center center;
+                  transform-origin: center center;
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+        10% {
+          -webkit-transform: scale(0.91);
+                  transform: scale(0.91);
+          -webkit-animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        17% {
+          -webkit-transform: scale(0.98);
+                  transform: scale(0.98);
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+        33% {
+          -webkit-transform: scale(0.87);
+                  transform: scale(0.87);
+          -webkit-animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        45% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+      }
+    .oferta-curso{
+        margin: 0rem 0rem 0rem 0rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .oferta-curso h2{   
+        color: red;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 80px;
+        margin-bottom: -3rem;
+    }
+    .timer {
+        background-color: red;
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin: 50px 1rem 0rem 1rem;
+        border-radius: 1rem;
+    }
+    .timer h4{
+        padding-top: 1rem;
+        font-size: 30px;
+    }
+    .oferta-precios h1{
+        font-size: 80px;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .oferta-precios h3{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 60px;
+        margin-top: -1rem;
+        background-color: gray;
+        color: rgb(0, 255, 0);
+        text-shadow: 2px 2px 1px black;
+    }
+    .oferta-precios p{
+        font-weight: 600;
+    }
+    
+    .boton-compra{
+        display: flex;
+        flex-direction: column;
+    }
+    .boton-compra button{
+        background-color: rgb(0, 189, 0);
+        margin: 0px 0px 0px 0px;
+        border-radius: 2rem;
+    }
+    .boton-compra a{
+        font-family: 'Bebas Neue', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 50px;
+        text-shadow: 2px 2px 1px black;
+    }
+    .boton-compra p{
+        margin-top: -1rem;
+    }
+    .boton-compra img{
+        max-width: 500px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-style: solid;
+        border-color: rgb(97, 97, 97);
+        border-radius: 1rem;
+        box-shadow: 2px 2px 5px rgb(150, 150, 150);
+    }
+
+    .profesor-curso{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: 1em;
+        margin-bottom: 1rem;
+    }
+    .profesor-curso h3{
+        margin-top: 1rem;
+        width: 300px;
+    }
+    .profesor-curso p{
+        width: 300px;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+    }
+    
+    .oferta-gratis{
+        margin: 1rem 0rem 1rem 0rem;
+        border-radius: 1rem;
+        border-style: dashed;
+        border-color: rgb(255, 0, 0);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .oferta-gratis h1{
+        color: red;
+        padding: 2rem;
+        font-size: 50px;
+        background-color: rgb(255, 208, 0);
+    }
+    .oferta-gratis h2{
+        background-color: rgb(255, 208, 0);
+        margin-top: -2rem;
+        font-size: 35px;
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }
+    .oferta-gratis h5{
+        background-color: rgb(255, 208, 0);
+        font-size: 40px;
+        color: rgb(0, 102, 255);
+        margin-top: -3rem;
+        text-shadow: 1px 2px 1px black;
+    }
+    .oferta-gratis img{
+    }
+    .oferta-gratis button{
+        text-decoration: none;
+        background-color: rgb(6, 216, 6);
+        margin: 1rem 0rem 1rem 0rem;
+        color: white;
+        padding: 2rem 3rem 2rem 3rem;
+        font-size: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px gray;
+    }
+    .oferta-gratis button a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .oferta-curso2{
+        margin: 1rem 0rem 3rem 0rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .oferta-curso2 img{
+        width: 300px;
+    }
+    .oferta-curso2 h2{   
+        color: red;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 60px;
+        margin-bottom: -3rem;
+    }
+
+    
+    /* PREGUNTAS */
+    
+    .seccion-preguntas{
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    
+    .seccion-preguntas h4{
+        font-size: 45px;
+        margin-top: 2rem;
+        color: red;
+    }
+    .seccion-preguntas h5{
+        font-size: 30px;
+    }
+    
+    .accordion {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .accordion-item {
+        text-align: left;
+        border: 1px solid #ddd;
+        margin: 10px 0;
+        background-color: #ffffff;
+    }
+    
+    .accordion-header {
+        background-color: #e6e6e6;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 1rem;
+        margin: 0rem 1rem 0rem 1rem;
+        border-style: solid;
+        border-color: rgb(105, 105, 105);
+    }
+    
+    .accordion-content {
+        display: none;
+        padding: 10px;
+        margin: 0rem 1rem 0rem 1rem;
+    }
+}
+@media(max-width: 375px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    header{
+        text-align: center;
+        background-color: rgb(54, 54, 54);
+    }
+    header h1{
+        margin-top: 0rem;
+        font-family: 'Anton', sans-serif;
+        font-size: 100px;
+        color: white;
+    }
+    header h2{
+        background-color: rgb(64, 95, 64);
+        color: black;
+        font-family: 'Anton', sans-serif;
+        font-size: 60px;
+        margin-bottom: 1rem;
+    }
+    header button{
+        padding: 5px 15px 5px 15px;
+        margin: 3px 0px 3px 0px;
+        background-color: rgb(54, 54, 54);
+        font-family: 'Bebas Neue', sans-serif;
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        border-color: rgb(255, 0, 0);
+        font-size: 20px;
+        border-radius: 10px;
+        margin-right: 2rem;
+    }
+    header button:hover{
+        background-color: red;
+        color: black;
+        border-color: white;
+    }
+    header button a{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+    }
+    header button a:hover{
+        color: black;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .acceso-info h3{ 
+        color: rgb(14, 165, 0);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 80px;
+        margin-bottom: -1rem;
+    }
+    .acceso-info h2{ 
+        color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 100px;
+        margin-bottom: -1rem;
+    }
+    .acceso-info h5{ 
+        color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 30px;
+        background-color: rgb(255, 208, 0);
+        margin-bottom: 1rem;
+    }
+    .comentarios-img{ 
+        margin-bottom: 1rem;
+    }
+    .reparaciones-img{
+        margin-bottom: 1rem;
+    }
+    
+    .comienzo-clases{
+        padding: 1rem 0rem 1rem 0rem;
+        background-color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .comienzo-clases h2{
+        color:  rgb(255, 208, 0);
+        font-size: 70px;
+    }
+    .comienzo-clases h5{
+        color: white;
+        margin-top: -1rem;
+        font-size: 35px;
+    }
+    
+    .info-cursada{
+        background-color: rgb(70, 70, 70);
+        border-radius: 15px;
+        margin: 1rem 0rem 1rem 0rem;
+        text-align: left;
+    }
+    .info-cursada h3{
+        font-family: 'Bebas Neue', sans-serif;
+        text-align: center;
+        margin-top: 1rem;
+        color: white;
+        font-size: 50px;
+    }
+    .info-cursada-text{
+        margin: 1rem 1rem 1rem 1rem;
+        color: white;
+        font-size: 15px;
+    }
+    .oferta-curso{
+        margin: 0rem 0rem 0rem 0rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .oferta-curso h2{   
+        color: red;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 80px;
+        margin-bottom: -3rem;
+    }
+    .timer {
+        background-color: red;
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin: 50px 1rem 0rem 1rem;
+        border-radius: 1rem;
+    }
+    .timer h4{
+        padding-top: 1rem;
+        font-size: 30px;
+    }
+    .oferta-precios h1{
+        font-size: 80px;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .oferta-precios h3{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 60px;
+        margin-top: -1rem;
+        background-color: gray;
+        color: rgb(0, 255, 0);
+        text-shadow: 2px 2px 1px black;
+    }
+    .oferta-precios p{
+        font-weight: 600;
+    }
+    
+    .boton-compra{
+        display: flex;
+        flex-direction: column;
+    }
+    .boton-compra button{
+        background-color: rgb(0, 189, 0);
+        margin: 0px 0px 0px 0px;
+        border-radius: 2rem;
+    }
+    .boton-compra a{
+        font-family: 'Bebas Neue', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 50px;
+        text-shadow: 2px 2px 1px black;
+    }
+    .boton-compra p{
+        margin-top: -1rem;
+    }
+    .boton-compra img{
+        max-width: 500px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-style: solid;
+        border-color: rgb(97, 97, 97);
+        border-radius: 1rem;
+        box-shadow: 2px 2px 5px rgb(150, 150, 150);
+    }
+
+    .profesor-curso{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+    }
+    .profesor-curso p{
+        width: 300px;
+        margin-top: -2rem;
+        margin-left: 2rem;
+    }
+    .profesor-curso img{
+        margin-left: 5rem;
+    }
+    
+    .oferta-gratis{
+        margin: 1rem 0rem 1rem 0rem;
+        border-radius: 1rem;
+        border-style: dashed;
+        border-color: rgb(255, 0, 0);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .oferta-gratis h1{
+        color: red;
+        padding: 2rem;
+        font-size: 50px;
+        background-color: rgb(255, 208, 0);
+    }
+    .oferta-gratis h2{
+        background-color: rgb(255, 208, 0);
+        margin-top: -2rem;
+        font-size: 35px;
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }
+    .oferta-gratis h5{
+        background-color: rgb(255, 208, 0);
+        font-size: 40px;
+        color: rgb(0, 102, 255);
+        margin-top: -3rem;
+        text-shadow: 1px 2px 1px black;
+    }
+    .oferta-gratis img{
+    }
+    .oferta-gratis button{
+        text-decoration: none;
+        background-color: rgb(6, 216, 6);
+        margin: 1rem 0rem 1rem 0rem;
+        color: white;
+        padding: 2rem 3rem 2rem 3rem;
+        font-size: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px gray;
+    }
+    .oferta-gratis button a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .oferta-curso2{
+        margin: 1rem 0rem 3rem 0rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .oferta-curso2 img{
+        width: 300px;
+    }
+    .oferta-curso2 h2{   
+        color: red;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 60px;
+        margin-bottom: -3rem;
+    }
+    .oferta-curso2 img{
+        margin-left: 2rem;
+    }
+
+    
+    /* PREGUNTAS */
+    
+    .seccion-preguntas{
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    
+    .seccion-preguntas h4{
+        font-size: 45px;
+        margin-top: 2rem;
+        color: red;
+    }
+    .seccion-preguntas h5{
+        font-size: 30px;
+    }
+    
+    .accordion {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .accordion-item {
+        text-align: left;
+        border: 1px solid #ddd;
+        margin: 10px 0;
+        background-color: #ffffff;
+    }
+    
+    .accordion-header {
+        background-color: #e6e6e6;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 1rem;
+        margin: 0rem 1rem 0rem 1rem;
+        border-style: solid;
+        border-color: rgb(105, 105, 105);
+    }
+    
+    .accordion-content {
+        display: none;
+        padding: 10px;
+        margin: 0rem 1rem 0rem 1rem;
+    }
+}
+@media(max-width: 320px){
+    header{
+        text-align: center;
+        background-color: rgb(54, 54, 54);
+    }
+    header h1{
+        margin-top: 0rem;
+        font-family: 'Anton', sans-serif;
+        font-size: 80px;
+        color: white;
+    }
+    header h2{
+        background-color: rgb(64, 95, 64);
+        color: black;
+        font-family: 'Anton', sans-serif;
+        font-size: 60px;
+        margin-bottom: 1rem;
+    }
+    header button{
+        padding: 5px 15px 5px 15px;
+        margin: 3px 0px 3px 0px;
+        background-color: rgb(54, 54, 54);
+        font-family: 'Bebas Neue', sans-serif;
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        border-color: rgb(255, 0, 0);
+        font-size: 20px;
+        border-radius: 10px;
+        margin-right: 2rem;
+    }
+    .acceso-info h3{ 
+        color: rgb(14, 165, 0);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 80px;
+        margin-bottom: -1rem;
+    }
+    .acceso-info h2{ 
+        color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 100px;
+        margin-bottom: -1rem;
+    }
+    .acceso-info h5{ 
+        color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 30px;
+        background-color: rgb(255, 208, 0);
+        margin-bottom: 0rem;
+    }
+    .comentarios-img{ 
+        margin-bottom: 1rem;
+    }
+    .reparaciones-img{
+        margin-bottom: 1rem;
+    }
+    
+    .comienzo-clases{
+        padding: 1rem 0rem 1rem 0rem;
+        background-color: rgb(65, 65, 65);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .comienzo-clases h2{
+        color:  rgb(255, 208, 0);
+        font-size: 70px;
+    }
+    .comienzo-clases h5{
+        color: white;
+        margin-top: -1rem;
+        font-size: 35px;
+    }
+    .info-cursada{
+        background-color: rgb(70, 70, 70);
+        margin: 1rem 0rem 1rem 0rem;
+        text-align: left;
+    }
+    .info-cursada h3{
+        font-family: 'Bebas Neue', sans-serif;
+        text-align: center;
+        margin-top: 1rem;
+        color: white;
+        font-size: 50px;
+    }
+    .info-cursada-text{
+        margin: 1rem 1rem 1rem 1rem;
+        color: white;
+        font-size: 15px;
+    }
+    .oferta-curso{
+        margin: 0rem 0rem 0rem 0rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .oferta-curso h2{   
+        color: red;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 80px;
+        margin-bottom: -3rem;
+    }
+    .timer {
+        background-color: red;
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin: 50px 1rem 0rem 1rem;
+        border-radius: 1rem;
+    }
+    .timer h4{
+        padding-top: 1rem;
+        font-size: 30px;
+    }
+    .oferta-precios h1{
+        font-size: 80px;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .oferta-precios h3{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 60px;
+        margin-top: -1rem;
+        background-color: gray;
+        color: rgb(0, 255, 0);
+        text-shadow: 2px 2px 1px black;
+    }
+    .oferta-precios p{
+        font-weight: 600;
+    }
+    
+    .boton-compra{
+        display: flex;
+        flex-direction: column;
+    }
+    .boton-compra button{
+        background-color: rgb(0, 189, 0);
+        margin: 0px 0px 0px 0px;
+        border-radius: 2rem;
+    }
+    .boton-compra a{
+        font-family: 'Bebas Neue', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 50px;
+        text-shadow: 2px 2px 1px black;
+    }
+    .boton-compra p{
+        margin-top: -1rem;
+    }
+    .boton-compra img{
+        max-width: 500px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-style: solid;
+        border-color: rgb(97, 97, 97);
+        border-radius: 1rem;
+        box-shadow: 2px 2px 5px rgb(150, 150, 150);
+    }
+
+    .profesor-curso{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+    }
+    .profesor-curso h3{
+        margin-top: 1rem;
+        width: 300px;
+    }
+    .profesor-curso p{
+        width: 300px;
+        margin-top: -2rem;
+        margin-left: 0.5rem;
+    }
+    .profesor-curso img{
+        margin-left: 3.7rem;
+    }
+    
+    .oferta-gratis{
+        margin: 1rem 0rem 1rem 0rem;
+        border-radius: 1rem;
+        border-style: dashed;
+        border-color: rgb(255, 0, 0);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .oferta-gratis h1{
+        color: red;
+        padding: 2rem;
+        font-size: 50px;
+        background-color: rgb(255, 208, 0);
+    }
+    .oferta-gratis h2{
+        background-color: rgb(255, 208, 0);
+        margin-top: -2rem;
+        font-size: 35px;
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }
+    .oferta-gratis h5{
+        background-color: rgb(255, 208, 0);
+        font-size: 40px;
+        color: rgb(0, 102, 255);
+        margin-top: -3rem;
+        text-shadow: 1px 2px 1px black;
+    }
+    .oferta-gratis img{
+    }
+    .oferta-gratis button{
+        text-decoration: none;
+        background-color: rgb(6, 216, 6);
+        margin: 1rem 0rem 1rem 0rem;
+        color: white;
+        padding: 2rem 3rem 2rem 3rem;
+        font-size: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px gray;
+    }
+    .oferta-gratis button a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .oferta-curso2{
+        margin: 1rem 0rem 3rem 0rem;
+        border-style: dashed;
+        border-color: rgb(16, 202, 16);
+        border-radius: 1rem;
+    }
+    .oferta-curso2 img{
+        width: 300px;
+    }
+    .oferta-curso2 h2{   
+        color: red;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 60px;
+        margin-bottom: -3rem;
+    }
+
+    
+    /* PREGUNTAS */
+    
+    .seccion-preguntas{
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    
+    .seccion-preguntas h4{
+        font-size: 45px;
+        margin-top: 2rem;
+        color: red;
+    }
+    .seccion-preguntas h5{
+        font-size: 30px;
+    }
+    
+    .accordion {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .accordion-item {
+        text-align: left;
+        border: 1px solid #ddd;
+        margin: 10px 0;
+        background-color: #ffffff;
+    }
+    
+    .accordion-header {
+        background-color: #e6e6e6;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 1rem;
+        margin: 0rem 1rem 0rem 1rem;
+        border-style: solid;
+        border-color: rgb(105, 105, 105);
+    }
+    
+    .accordion-content {
+        display: none;
+        padding: 10px;
+        margin: 0rem 1rem 0rem 1rem;
+    }
+}
+
+
+
+
+
+
